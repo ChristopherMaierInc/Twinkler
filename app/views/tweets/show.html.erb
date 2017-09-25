@@ -1,4 +1,12 @@
-<p id="notice"><%= notice %></p>
+<style>
+body {
+  background-color: black;
+  color: white;
+}
+  a {
+    color: pink;
+  }
+</style>
 
 <p>
   <strong>Content:</strong>
@@ -7,7 +15,7 @@
 
 <p>
   <strong>User:</strong>
-  <%= @tweet.user %>
+  <%= @tweet.user.email %>
 </p>
 
 <%= link_to 'Edit', edit_tweet_path(@tweet) %> |
